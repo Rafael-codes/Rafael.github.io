@@ -1,97 +1,254 @@
+
 <html>
 <head>
-  <title>Rafael | Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Rafael | Portfolio</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* HERO HEADER */
+    header {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      margin: 10px 0 5px 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: #a5b4fc;
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 600;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* CARDS */
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+      border-left: 3px solid #38bdf8;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 5px 5px 0 0;
+    }
+
+    /* PROGRESS BAR */
+    .progress-container {
+      background: #1e293b;
+      border-radius: 10px;
+      width: 100%;
+      height: 12px;
+      margin: 8px 0;
+    }
+
+    .progress-bar {
+      height: 12px;
+      border-radius: 10px;
+      background: #38bdf8;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      border-top: 1px solid #1e293b;
+      color: #a5b4fc;
+    }
+
+    /* RESPONSIVE */
+    @media(min-width: 800px) {
+      .card-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .card-container .card {
+        flex: 1 1 45%;
+      }
+    }
+
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Rafael</h1>
-  <p>Software Engineering Undergraduate | DSA & Problem Solving</p>
-  <p>
-    <a href="https://github.com/Rafael-codes" target="_blank">GitHub</a> |
-    <a href="https://leetcode.com/u/Rafael_official/" target="_blank">LeetCode</a> |
-    <a href="https://www.linkedin.com/in/rafael2007/" target="_blank">LinkedIn</a>
-  </p>
-  <style>
-  body {
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background: #020617;
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  color: #38bdf8;
-  margin-bottom: 5px;
-}
-
-section {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-</style>
-</header>
-
-<section>
-  <div class="card">
-    <h2>About Me</h2>
+  <header>
+    <h1>Rafael</h1>
+    <p>Software Engineer | ML & DSA Enthusiast</p>
     <p>
-      I am a Computer Science student focused on data structures, algorithms,
-      and building clean, logical software projects.
+      <a href="https://github.com/Rafael-codes" target="_blank">GitHub</a> |
+      <a href="https://leetcode.com/u/Rafael_official/" target="_blank">LeetCode</a> |
+      <a href="https://www.linkedin.com/in/rafael2007/" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science undergraduate with a strong interest in data structures,
+        algorithms, and core software engineering principles. I enjoy solving logic-heavy
+        problems and building software that emphasizes correctness, efficiency, and clean design.
+      </p>
+      <p>
+        I regularly practice DSA and competitive programming to strengthen my analytical
+        thinking and coding discipline. My interests include backend logic, algorithm
+        optimization, and developing projects that reflect strong computer science fundamentals.
+      </p>
+    </div>
+
+    <div class="card">
+    <h2>Education</h2>
+    <p>
+      <b>Bachelor of Technology (B.Tech) – Computer Science</b><br>
+      VIT Chennai<br>
+      2024 – Present
     </p>
   </div>
+    <div class="card">
+      <h2>Skills</h2>
+      <p>
+        <span class="tag">Python</span>
+        <span class="tag">C++</span>
+        <span class="tag">Java</span>
+        <span class="tag">DSA</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">DBMS</span>
+        <span class="tag">Networking</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Git</span>
+        <span class="tag">Socket Programming</span>
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Skills</h2>
-    <p>
-      <b>Languages:</b> Python, C++, Java (basic)<br>
-      <b>DSA:</b> Arrays, Hashing, Trees<br>
-      <b>Web:</b> HTML, CSS<br>
-      <b>Tools:</b> Git, GitHub
-    </p>
-  </div>
+    
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Algorithm Visualizer (Web)</b> – Built an interactive tool to visualize arrays, stacks, and BFS traversal, demonstrating step-by-step execution.Deployed and hosted the application as a static website, enabling public access and real-time interaction</li>
+        <li><b>Flappy Bird Game (Python)</b> – Developed a 2D game with collision detection, score tracking, and smooth gameplay using object-oriented programming.</li>
+        <li><b>Scientific Calculator (Tkinter)</b> – Created a GUI-based calculator supporting arithmetic and scientific operations with proper input validation and error handling.</li>
+        <li><b>Offline Chatbot (Python)</b> – Built a local client-server chatbot using socket programming, implementing real-time message exchange and concurrency.</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li><b>Algorithm Visualizer (Web)</b></li>
-      <li><b>Flappy Bird Game (Python)</b></li>
-      <li><b>Scientific Calculator (Tkinter)</b></li>
-    </ul>
-  </div>
+   
+   
+    <div class="card">
+      <h2>Problem Solving</h2>
+      <p>LeetCode: 300+ problems solved</p>
+      <div class="progress-container">
+        <div class="progress-bar" style="width:100%"></div>
+      </div>
+      <p>HackerRank: 100+ problems solved</p>
+      <div class="progress-container">
+        <div class="progress-bar" style="width:100%"></div>
+      </div>
+    </div>
+    <div class="card">
+  <h2>Courses & Learning</h2>
+  <ul>
+    <li>
+      <b>Machine Learning – Andrew Ng (Coursera)</b><br>
+      Status: In Progress<br>
+      Topics: Supervised Learning, Linear & Logistic Regression, Bias–Variance, Model Evaluation
+    </li>
 
-  <div class="card">
-    <h2>Problem Solving</h2>
-    <p>300+ DSA problems solved on LeetCode</p>
-  </div>
-</section>
+    <li>
+      <b>Machine Learning Crash Course – Google</b><br>
+      Status: In Progress<br>
+      Topics: ML Fundamentals, Data Preparation, Training & Validation, Overfitting
+    </li>
+
+    <li>
+      <b>Elements of AI – University of Helsinki</b><br>
+      Status: In Progress<br>
+      Topics: AI Foundations, Problem Solving, Real-World AI Applications
+    </li>
+
+    <li>
+      <b>Introduction to Deep Learning – NVIDIA Deep Learning Institute</b><br>
+      Status: In Progress<br>
+      Topics: Neural Networks, Forward & Backpropagation, GPU-Accelerated Deep Learning Basics
+    </li>
+  </ul>
+</div>
+
+
+    
+
+
+  </section>
+
+  
 
 </body>
 </html>
